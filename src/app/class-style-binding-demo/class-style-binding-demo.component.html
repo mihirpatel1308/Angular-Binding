@@ -1,0 +1,13 @@
+<!--Class Binding -->
+<h2>{{tittleOne}}</h2>
+<div [class.my-class]="applyClass">Apply Class</div><br>
+
+<!-- Style Binding -->
+<h2 class="" style="">{{tittleTwo}}</h2>
+<div [style.color]="applyStyle? 'blue':'orange'">Style binding</div>`
+
+<button [style.color]="isSpecial ? 'red': 'green'">Red</button>
+<button [style.background-color]="canSave ? 'cyan': 'grey'" >Save</button>
+
+<button [style.font-size.em]="isSpecial ? 3 : 1" >Big</button>
+<button (click)="testFunction()" [style.font-size.%]="!isSpecial ? 150 : 50" >Small</button>
